@@ -1,0 +1,42 @@
+<div class="row">
+    <div class="col-xl-8">
+        <a href="{{ url_for('index') }}"><img src="{{ url_for('static', path='images/logo.png') }}" id="logo"></a>
+        <div id="menu">
+            <nav class="navbar navbar-expand-xl navbar-light">
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbar"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbar">
+                        <ul class="navbar-nav mr-auto ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ url_for('author')}}">Об авторе</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ url_for('catalog')}}">Каталог</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ url_for('license')}}">Лицензия</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ url_for('tools')}}">Инструменты</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ url_for('contacts') }}">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+            </nav>
+        </div>
+    </div>
+    <div class="col-xl-4 text-center">
+        <a href="{{ url_for('login') }}" id="top_cart">
+            <img src="{{ url_for('static', path='images/vhod.png') }}">
+            Войти в кабинет
+        </a>
+        <a href="{{ url_for('basket') }}" id="top_cart">
+            <img src="{{ url_for('static', path='images/cartt.png') }}">
+            Ваша корзина пуста
+        </a>
+    </div>
+</div>

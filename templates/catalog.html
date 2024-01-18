@@ -1,0 +1,116 @@
+{% extends "base.html" %}
+{% block title %} Fairway - авторская музыка, покупка прав на использование {% endblock %}
+{% block content %}
+
+<div id="top">
+	<div class="container">
+		{% include "include/main_menu.html" %}
+	</div>
+</div>
+
+<div id="crumbs">
+    <div class="container">
+        <ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="/">Главная</a></li>
+			<li class="breadcrumb-item active">Каталог</li>
+		</ol>
+    </div>
+</div>
+
+<div class="container">
+	<h1>Каталог</h1>
+	<div class="row no-gutters align-items-center" id="prod">
+		<div class="col-xl-1">
+			<a href="{{url_for('catalog')}}"><img src="{{url_for('static', path='images/play.png')}}" class="play"></a>
+		</div>
+		<div class="col-xl-9 px-4">
+			<b>Energetic Happy Rock</b><br>
+			ID: 135380
+		</div>
+		<div class="col-xl-1">
+			<span>1 300 р.</span>
+		</div>
+		<div class="col-xl-1">
+			<a href="{{url_for('basket')}}"><img src="{{ url_for('static', path='images/cart.png')}}"></a>
+		</div>
+	</div>
+	<div class="row no-gutters align-items-center" id="prod">
+		<div class="col-xl-1">
+			<a href="{{url_for('catalog')}}"><img src="{{url_for('static', path='images/play.png')}}" class="play"></a>
+		</div>
+		<div class="col-xl-9 px-4">
+			<b>Dramatic Piano and Strings</b><br>
+			ID: 135380
+		</div>
+		<div class="col-xl-1">
+			<span>1 300 р.</span>
+		</div>
+		<div class="col-xl-1">
+			<a href="{{url_for('basket')}}"><img src="{{ url_for('static', path='images/cart.png')}}"></a>
+		</div>
+	</div>
+	<div class="row no-gutters align-items-center" id="prod">
+		<div class="col-xl-1">
+			<a href="{{url_for('catalog')}}"><img src="{{url_for('static', path='images/play.png')}}" class="play"></a>
+		</div>
+		<div class="col-xl-9 px-4">
+			<b>Восторженная эпопея</b><br>
+			ID: 135380
+		</div>
+		<div class="col-xl-1">
+			<span>1 300 р.</span>
+		</div>
+		<div class="col-xl-1">
+			<a href="{{url_for('basket')}}"><img src="{{ url_for('static', path='images/cart.png')}}"></a>
+		</div>
+	</div>
+	<div class="row no-gutters align-items-center" id="prod">
+		<div class="col-xl-1">
+			<a href="{{url_for('catalog')}}"><img src="{{url_for('static', path='images/play.png')}}" class="play"></a>
+		</div>
+		<div class="col-xl-9 px-4">
+			<b>Energetic Happy Rock</b><br>
+			ID: 135380
+		</div>
+		<div class="col-xl-1">
+			<span>1 300 р.</span>
+		</div>
+		<div class="col-xl-1">
+			<a href="{{url_for('basket')}}"><img src="{{ url_for('static', path='images/cart.png')}}"></a>
+		</div>
+	</div>
+	<div class="row no-gutters align-items-center" id="prod">
+		<div class="col-xl-1">
+			<a href="{{url_for('catalog')}}"><img src="{{url_for('static', path='images/play.png')}}" class="play"></a>
+		</div>
+		<div class="col-xl-9 px-4">
+			<b>Dramatic Piano and Strings</b><br>
+			ID: 135380
+		</div>
+		<div class="col-xl-1">
+			<span>1 300 р.</span>
+		</div>
+		<div class="col-xl-1">
+			<a href="{{url_for('basket')}}"><img src="{{ url_for('static', path='images/cart.png')}}"></a>
+		</div>
+	</div>
+	<div class="row no-gutters align-items-center" id="prod">
+		<div class="col-xl-1">
+			<a href="{{url_for('catalog')}}"><img src="{{url_for('static', path='images/play.png')}}" class="play"></a>
+		</div>
+		<div class="col-xl-9 px-4">
+			<b>Восторженная эпопея</b><br>
+			ID: 135380
+		</div>
+		<div class="col-xl-1">
+			<span>1 300 р.</span>
+		</div>
+		<div class="col-xl-1">
+			<a href="{{url_for('basket')}}"><img src="{{ url_for('static', path='images/cart.png')}}"></a>
+		</div>
+	</div>
+</div>
+
+{% include "include/footer.html" %}
+
+{% endblock %}

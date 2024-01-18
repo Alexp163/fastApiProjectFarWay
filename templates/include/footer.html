@@ -1,0 +1,64 @@
+<div id="niz">
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-4">
+				<div id="niz_zag">Часто покупают</div>
+				<div id="niz_prod">
+					<a href="catalog.html"><img src="{{ url_for('static', path='images/playn.png') }}"></a>
+					<b>Energetic Happy Rock</b>
+					ID: 135380
+				</div>
+				<div id="niz_prod">
+					<a href="catalog.html"><img src="{{ url_for('static', path='images/playn.png') }}"></a>
+					<b>Восторженная эпопея</b>
+					ID: 135380
+				</div>
+				<div id="niz_prod">
+					<a href="catalog.html"><img src="{{ url_for('static', path='images/playn.png') }}"></a>
+					<b>Dramatic Piano and Strings</b>
+					ID: 135380
+				</div>
+			</div>
+			<div class="col-xl-2">
+				<div id="niz_zag">Меню</div>
+				<div id="niz_menu">
+					<ul>
+						<li>
+							<a href="{{ url_for('author')}}">Об авторе</a>
+						</li>
+						<li>
+							<a href="{{ url_for('catalog')}}">Каталог</a>
+						</li>
+						<li>
+							<a href="{{ url_for('license')}}">Лицензия</a>
+						</li>
+						<li>
+							<a href="{{ url_for('tools')}}">Инструменты</a>
+						</li>
+						<li>
+							<a href="{{ url_for('contacts') }}">Контакты</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-xl-3 text-center">
+				<div id="niz_kont">
+					тел. <a href="tel:+7 927 234-21-12">+7 927 234-21-12</a><br>
+					e-mail: <a href="mailto:info@fairway.ru">info@fairway.ru</a>
+				</div>
+				{% include "include/social_network.html" %}
+
+			</div>
+			<div class="col-xl-3">
+				<div id="copy">
+					<a href="{{ url_for('index') }}"><img src="{{ url_for('static', path='images/logo.png') }}"></a>
+					<p>Авторская сузыка, покупка прав на использование</p>
+					Все права защищены | Самара <script type="text/javascript">var mdate = new Date(); document.write(mdate.getFullYear());</script>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="{{ url_for('static', path='js/scroll.js')}}"></script>
+<a id="gotop" class="scrollTop" class="butt" href="#" onclick="top.goTop(); return false;"><i class="fa fa-caret-up" aria-hidden="true"></i>
+</a>

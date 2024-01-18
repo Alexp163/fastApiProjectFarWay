@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block title %} Fairway - авторская музыка, покупка прав на использование {% endblock %}
+
+{% include "include/meta_tags.html" %}
+
+{% block content %}
+
+<div id="top">
+	<div class="container">
+		{% include "include/main_menu.html" %}
+	</div>
+</div>
+
+<div id="crumbs">
+    <div class="container">
+        <ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="/">Главная</a></li>
+			<li class="breadcrumb-item active">Контакты</li>
+		</ol>
+    </div>
+</div>
+
+<div class="container">
+	<h1>Контакты</h1>
+	<div class="row">
+		<div class="col-xl-6">
+				<div id="niz_kont">
+					тел. <a href="tel:+7 927 234-21-12">+7 927 234-21-12</a><br>
+					e-mail: <a href="mailto:info@fairway.ru">info@fairway.ru</a>
+				</div>
+					{% include "include/social_network.html" %}
+				<br>
+		</div>
+		<div class="col-xl-6">
+			<form action="#" method="get">
+				<div class="form-group">
+					<div id="form_zag">Обратная свзяь</div>
+				</div>
+				<div class="form-group">
+					<input name="name" value="" type="text" class="form-control" placeholder="Имя"/>
+				</div>
+				<div class="form-group">
+					<input name="telephone" id="telephone" value="" type="text" class="form-control" placeholder="Ваш телефон"/>
+				</div>
+				<div class="form-group">
+					<input name="mail" value="" type="text" class="form-control" placeholder="E-mail"/>
+				</div>
+				<div class="form-group">
+					<button type="submit" id="form_btn">Отправить</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+{% include "include/footer.html" %}
+
+{% endblock %}
